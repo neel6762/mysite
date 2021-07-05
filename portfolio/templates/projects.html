@@ -1,0 +1,44 @@
+{% extends 'base.html' %} {% block title %} <title>Projects</title> {% endblock %}
+{% block class_name_2 %}active{% endblock %}
+
+<!-- Block Content -->
+{% block content %}
+<h3 class="heading mt-5">Language and Tools</h3>
+
+<div class="row mb-3 mt-3 skills">
+  <div class="col">
+    <i class="devicon-python-plain"></i>
+    <i class="devicon-django-plain"></i>
+    <i class="devicon-php-plain"></i>
+    <i class="devicon-bash-plain"></i>
+    <i class="devicon-mysql-plain"></i>
+    <i class="devicon-linux-plain"></i>
+    <i class="devicon-java-plain"></i>
+    <i class="devicon-docker-plain"></i>
+    <i class="devicon-git-plain"></i>
+    <i class="devicon-bootstrap-plain"></i>
+  </div>
+</div>
+------
+{% if project_list %}
+<h3 class="heading mt-5">Projects</h3>
+
+{% for project in project_list %}
+{% if forloop.counter0|divisibleby:3 %} <div class="row"> {% endif %}
+  <div class="col-sm project_details text">
+    <h3>{{ project.project_name }}</h3>
+    <hr>
+    <h4>{{ project.project_desc}}</h4>
+    <h4>{{ project.project_stack }}</h4>
+    <a href="{{ project.project_url }}" target="blank">Visit here</a>
+  </div>
+  {% if forloop.counter|divisibleby:3 or forloop.last %}
+</div> {% endif %}
+
+{% endfor %}
+
+{% endif %}
+
+
+
+{% endblock %}

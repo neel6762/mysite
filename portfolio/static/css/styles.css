@@ -1,0 +1,176 @@
+body{
+  background-color: rgb(29,29,29);
+  color: white;
+  font-family: Rosario, sans-serif;
+}
+
+/* ###################################################  */
+/*  #################### NAVBAR #################### */
+/* ###################################################  */
+
+nav{
+  text-align: center;
+  margin-bottom: 2%;
+}
+nav ul{
+  margin-left: auto;
+  margin-right: auto;
+  font-size: clamp(20px,1.5vw,15px);
+}
+.nav-link{
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color:grey;
+  /* border-bottom: 1px solid grey; */
+}
+.nav-link:hover{
+  color: rgb(112,241,210);
+  border-bottom: 1px solid rgb(112,241,210);
+}
+.active{
+ color: rgb(112,241,210);
+  border-bottom: 1px solid rgb(112,241,210);
+}
+.navbar-toggler{
+  margin-left:auto !important;
+}
+
+/* ###################################################  */
+/* ################### MAIN CONTENT ################### */
+/* ###################################################  */
+
+.always-centered{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.connect-section{
+  text-align: center;
+}
+.border{
+    border: 3px solid white;
+}
+.color-green{
+    color:#EE2524;
+}
+.name-section .name{
+  font-size: clamp(50px, 8vw,80px);
+  color:rgb(233,62,89);
+  line-height: normal;
+}
+.name-section p{
+  font-size: clamp(15px, 2vw, 40px);
+  line-height: normal;
+}
+.reach-me{
+  font-size: clamp(15px,1.5vw, 30px);
+}
+.btn{
+  color: rgb(112,241,210);
+}
+.btn-custom{
+  border: 1px solid rgb(112,241,210);
+  letter-spacing: 1px;
+  font-size: clamp(12px, 1vw, 25px);
+}
+.btn-custom:hover{
+  border: 1px solid rgb(112,241,210);
+  background-color: rgb(112,241,210);
+  color: rgb(29,29,29);
+}
+.fab, .fas{
+  font-size: 3.5vw; color: white;
+}
+.fab:hover, .fas:hover{
+  color: rgb(112,241,210);
+
+}
+
+/* ############################ */
+/* EDUCATION PAGE */
+/* ############################ */
+
+.education_details{
+  padding: 5%;
+  justify-content: center;
+  line-height: normal;
+  /* text-align: center; */
+}
+.education_details h1{
+  text-transform: uppercase;
+  color: rgb(233,62,89);
+  letter-spacing: 1vh;
+  font-size: clamp(20px, 2vw, 40px);
+
+}
+.education_details hr{
+  width:50%;
+  /* margin-left: 25%; */
+  color:rgb(233,62,89);
+  height: .5%;
+}
+.education_details h3{
+  font-size: clamp(20px, 1.7vw, 40px);
+  color: rgb(112,241,210);
+  margin-top: 4%;
+}
+.education_details h4{
+  font-size: clamp(15px, 1.5vw, 35px);
+  color: grey;
+  margin:0;
+  line-height: normal;
+}
+
+/*  ####################################### */
+/* ####### PROJECT SECTION ############## */
+/*  ####################################### */
+.education_details{
+  padding: 3%;
+  justify-content: center;
+  line-height: normal;
+}
+.project_details hr{
+  background-color: rgb(112,241,210);
+}
+.project_details h3{
+  font-size: clamp(20px, 1.7vw, 40px);
+  color: rgb(112,241,210);
+  margin-top: 4%;
+  margin-bottom: -2%;
+}
+.project_details h4{
+  font-size: clamp(15px, 1.2vw, 35px);
+  color: grey;
+  margin:0;
+  /* line-height: normal; */
+}
+.project_details a{
+  color: rgb(233,62,89);
+  font-size: clamp(15px, 1.2vw, 35px);
+  text-decoration: none;
+  margin-top: 3px;
+}
+.project_details a:hover{
+  color: rgb(233,62,89);
+  border-bottom: 1px solid rgb(233,62,89);
+}
+
+.heading{
+  letter-spacing:3px;
+  font-size: clamp(20px, 2vw, 40px);
+  /* color : rgb(233,62,89); */
+  color: #ccd6f6;
+  text-transform: uppercase;
+}
+.skills h4{
+  letter-spacing:3px;
+  color : rgb(233,62,89);
+  text-transform: uppercase;
+  font-size: clamp(15px, 1.5vw, 35px);
+
+}
+.skills i{
+  font-size: clamp(30px, 6vw, 50px);
+  padding: .5%;
+}

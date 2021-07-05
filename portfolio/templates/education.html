@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% block class_name_3 %}active{% endblock %}
+
+{% block title %}
+<title>Education</title>
+{% endblock %}
+
+
+{% block content %}
+
+{% if educ_list %}
+<!-- code here to list the education -->
+<div class="row mb-3">
+    <div class="col-sm education_details">
+        <h1>Education</h1>
+        <hr>
+        {% for ed in educ_list %}
+        <h3>{{ ed.degree_type }}</h3>
+        <h4>{{ ed.institute_name }} ({{ ed.start_year }} - {{ ed.end_year }})</h4>
+        {% if ed.degree_type == "Higher Secondary Schooling" %}
+        <h4>Percentage : {{ ed.score }} %</h4>
+        {% else %}
+        <h4>CGPA : {{ ed.score }}</h4>
+        {% endif %}
+        {% endfor %}
+    </div>
+    <div class="col-sm education_details">
+        <h1>Achivements</h1>
+        <hr>
+        <h3>Top Performer</h3>
+        <h4>Received laurels for being the top performing student for all terms at graduate level</h4>
+        <h3>Devang Mehta IT Award</h3>
+        <h4>Received coveted Devang Mehta IT award for academic excellence</h4>
+        <h3>Coding Competition</h3>
+        <h4>Won 1st prize at MBICT, Vidhyanagar</h4>
+        <h3>Volunteering</h3>
+        <h4>Volunteered multiple workshops for Python, Wordprees, Django</h4>
+    </div>
+</div>
+</div>
+{% else %}
+<p>No Projects</p>
+{% endif %}
+
+
+{% endblock %}
+<!-- 
+
+
+ <div class="row mt-5">
+    
+</div>
+
+<div class="row mt-5">
+    
+</div>
+-->
