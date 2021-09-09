@@ -30,9 +30,5 @@ class Education(models.Model):
         help_text="Enter your score, here for instance 9.8")
 
     # methods
-    def convert_score(self):
-        """Converts the score taken from the score field and appends a string value"""
-        return None
-
     def __str__(self):
         return f'{self.institute_name}\t{self.start_year}\t{self.end_year}\t{self.score}'

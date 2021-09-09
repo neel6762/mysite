@@ -1,16 +1,21 @@
 from portfolio.models import *
 from django.shortcuts import render
+from django.http import HttpResponse, Http404
+import os
 
-
-# Create your views here.
+# returns the index page of the site
 def index(request):
     return render(request, 'index.html', context=None)
+
+# retunrs the education page of the site
 
 
 def education(request):
     educ_list = Education.objects.all()
     context = {"educ_list": educ_list}
     return render(request, 'education.html', context=context)
+
+# returns the projects page of the site
 
 
 def projects(request):
