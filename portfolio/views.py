@@ -4,6 +4,8 @@ from django.http import HttpResponse, Http404
 import os
 
 # returns the index page of the site
+
+
 def index(request):
     return render(request, 'index.html', context=None)
 
